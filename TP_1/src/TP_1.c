@@ -27,7 +27,6 @@ int main()
     while(seguir=='s')
     {
         system("cls");
-        printf("         --TITULO--\n\n\n");
 
         if(primerNumero==0)
         {
