@@ -26,7 +26,7 @@ float arsToBtc(float precio)
 }
 float precioPorKm(float precio, float km)
 {
-    float precioPorKm = km/precio; //MEJORAR VALIDACION
+    float precioPorKm = precio/km;
     return precioPorKm;
 }
 float diferenciaPrecio(float pAerolineas, float pLatam)

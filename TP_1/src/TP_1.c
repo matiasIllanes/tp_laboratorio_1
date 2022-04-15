@@ -74,13 +74,25 @@ int main()
         case 1:
             printf("Ingresar Kilometros: ");
             scanf("%f", &kilometros);
+            while(kilometros<=0){
+            	printf("Error. Ingrese una cantidad de km valida: ");
+            	scanf("%f", &kilometros);
+            }
             primerNumero=1;
             break;
         case 2:
             printf("Ingrese precio de vuelo de Aerolineas: ");
             scanf("%f", &precioAerolineas);
+            while(precioAerolineas<=0){
+            	printf("ERROR. Ingrese precio de vuelo de Aerolineas: ");
+            	scanf("%f", &precioAerolineas);
+            }
             printf("Ingrese precio de vuelo de Latam: ");
             scanf("%f", &precioLatam);
+            while(precioLatam<=0){
+            	printf("ERROR. Ingrese precio de vuelo de Latam: ");
+            	scanf("%f", &precioLatam);
+            }
             segundoNumero=1;
             break;
         case 3:
@@ -115,7 +127,7 @@ int main()
                 printf("Precio Aerolineas: %.2f\n", precioAerolineas);
                 printf("a) Precio con tarjeta de debito: $%.2f\n", descDebitoAa);
                 printf("b) Precio con tarjeta de credito: $%.2f\n", intCreditoAa);
-                printf("c) Precio pagando con bitcoin: $%.2f\n", arsAbtcAa);
+                printf("c) Precio pagando con bitcoin: %.2f BTC\n", arsAbtcAa);
                 printf("d) Precio unitario: $%.2f\n\n", precioXkmAa);
                 printf("Precio Latam: %.2f\n", precioLatam);
                 printf("a) Precio con tarjeta de debito: $%.2f\n", descDebitoLatam);
@@ -156,7 +168,7 @@ int main()
                 printf("Precio Latam: %.2f\n", precioLatam);
                 printf("a) Precio con tarjeta de debito: $%.2f\n", descDebitoLatam);
                 printf("b) Precio con tarjeta de credito: $%.2f\n", intCreditoLatam);
-                printf("c) Precio pagando con bitcoin: $%.10f\n", arsAbtcLatam);
+                printf("c) Precio pagando con bitcoin: %.10f BTC\n", arsAbtcLatam);
                 printf("d) Precio unitario: $%.2f\n\n", precioXkmLatam);
                 printf("La diferencia de precio es: $ %.2f\n", diferencia);
 
